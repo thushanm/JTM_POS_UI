@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {List} from "@mui/material";
 import {Link} from "react-router-dom";
 
-const pages = ['POS', 'Product', 'supplier','Customer'];
+const pages = ['POS', 'product', 'supplier','customer','payment'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export function ListNav() {
@@ -41,12 +41,11 @@ export function ListNav() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
-                        href="#app-bar-with-responsive-menu"
+                        href="JTM"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -57,7 +56,7 @@ export function ListNav() {
                             textDecoration: 'none',
                                 }}
                     >
-                        JTMPOS
+                       <img src="src/assets/1.png" alt="logo"  width="15%" />
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -98,12 +97,12 @@ export function ListNav() {
                             ))}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
                     <Typography
                         variant="h1"
                         noWrap
                         component="a"
-                        href="#app-bar-with-responsive-menu"
+                        href="JTM"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -116,7 +115,7 @@ export function ListNav() {
 
                         }}
                     >
-                        JTM POS
+                        <img src="src/assets/1.png" alt="logo" width="15%"/>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
